@@ -3,7 +3,7 @@
 **通过千寻微信框架+node.js服务可实现自动收款，自动发货，自动回复等等逆天功能**
 ### 千寻微信框架gitee开源网址：
 ### https://gitee.com/FAsuer/pc-vvt-hook-http-api
-***
+---
 ### 千寻微信框架接口文档网址：
 ### https://www.apifox.cn/apidoc/shared-af49a169-8b5c-4137-a5ea-723a10e8e794/doc-1093376
 ***
