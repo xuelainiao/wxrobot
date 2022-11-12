@@ -4,8 +4,8 @@ const route = express.Router();
 const request = require('request');
 var xmldoc = require('xmldoc');
 
-var mywxid = "wxid_5w188h69kkek22"; //机器人wxid
-var adminwxid = "wxid_5w188h69kkek22"; //管理员wxid
+var mywxid = ""; //机器人wxid
+var adminwxid = ""; //管理员wxid
 var url ="http://127.0.0.1:7777/DaenWxHook/httpapi/?wxid="+mywxid;
 var path = "DaenWxHook/httpapi/"
 
