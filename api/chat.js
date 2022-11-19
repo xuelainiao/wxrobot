@@ -20,7 +20,7 @@ route.post('/',(req,res)=>{
         }
 
         switch (params.event) {
-            case 10006: //转账事件
+            case 10006: //转账事件，自动收款
                 if (params.data.data.msgSource=="1") {
                         receiveMoney({
                             "type":"Q0016",
@@ -36,7 +36,7 @@ route.post('/',(req,res)=>{
                     "type":"Q0001",
                     "data":{
                         "wxid":params.data.data.fromWxid,
-                        "msg":"你好\n我是你的微信机器人\r我叫唠个锤子"
+                        "msg":"你好\n我是你的微信机器人\r我叫唠个锤子" //这里是回复内容 \r和\n是换行符
                     }
                 })
                 break;
@@ -46,7 +46,7 @@ route.post('/',(req,res)=>{
                         "type":"Q0001",
                         "data":{
                             "wxid":params.data.data.fromWxid,
-                            "msg":"你好\n我是你的微信机器人\r我叫唠个锤子"
+                            "msg":"你好\n我是你的微信机器人\r我叫唠个锤子" //这里是回复内容 \r和\n是换行符
                         }
                     })
                 }
@@ -73,6 +73,11 @@ route.post('/',(req,res)=>{
 })
 
 
+
+
+
+
+/*********函数区**********/
 function sendMessage(senddata) { //发送消息
         var options = {
             url:url,
