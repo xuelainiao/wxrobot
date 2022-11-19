@@ -31,7 +31,7 @@ route.post('/',(req,res)=>{
                         })
                     }
                 break;
-	   case 10008://群聊消息自动回复
+            case 10008://群聊消息自动回复
                 sendMessage({
                     "type":"Q0001",
                     "data":{
