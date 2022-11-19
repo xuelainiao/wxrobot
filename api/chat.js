@@ -31,7 +31,16 @@ route.post('/',(req,res)=>{
                         })
                     }
                 break;
-            case 10009: //自动回复
+			case 10008://群聊消息自动回复
+                sendMessage({
+                    "type":"Q0001",
+                    "data":{
+                        "wxid":params.data.data.fromWxid,
+                        "msg":"你好\n我是你的微信机器人\r我叫唠个锤子"
+                    }
+                })
+                break;
+            case 10009: //好友消息自动回复
                 if(params.data.data.msgType=="1" && params.data.data.fromType=="1"){
                     sendMessage({
                         "type":"Q0001",
