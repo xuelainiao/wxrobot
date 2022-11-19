@@ -5,7 +5,6 @@ const request = require('request');
 var xmldoc = require('xmldoc');
 
 var mywxid = ""; //机器人wxid
-var adminwxid = ""; //管理员wxid
 var url ="http://127.0.0.1:7777/DaenWxHook/httpapi/?wxid="+mywxid;
 var path = "DaenWxHook/httpapi/"
 
@@ -30,6 +29,12 @@ route.post('/',(req,res)=>{
                             }
                         })
                     }
+                break;
+            case 10007://二维码收款事件
+                var re = /收款金额￥.+/;
+                var data = params.data.data.msg;
+                var result = data.match(re);
+                console.log(result[0].split("￥")[1]); //打印收款金额
                 break;
             case 10008://群聊消息自动回复
                 sendMessage({
