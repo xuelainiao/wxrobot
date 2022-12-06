@@ -9,6 +9,3 @@
 ## 技术疑问交流
 #### Wechat：haisenbaomaoyi
 #### Telegram：[@byprogram](https://t.me/byprogram)
-
-
-### &#x1F353;&#x1F353;&#x1F353;麻烦各位观众姥爷给俺一个一键三连，就是对我最大的支持！！！&#x1F353;&#x1F353;&#x1F353;
